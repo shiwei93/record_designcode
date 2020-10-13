@@ -12,6 +12,8 @@ struct CourseView: View {
         List(0 ..< 20) { item in
             CourseRow()
         }
+        .listStyle(InsetGroupedListStyle())
+        .navigationTitle("Courses")
     }
 }
 
