@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct CourseView: View {
+    @ViewBuilder
     var body: some View {
+        #if os(iOS)
+        content
+            .listStyle(InsetGroupedListStyle())
+        #else
+        content
+            .frame(width: 800, height: 600)
+        #endif
+    }
+
+    var content: some View {
         List(0 ..< 20) { item in
             CourseRow()
         }
-        .listStyle(InsetGroupedListStyle())
         .navigationTitle("Courses")
     }
 }
