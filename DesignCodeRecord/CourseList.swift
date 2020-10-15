@@ -1,13 +1,13 @@
 //
-//  CourseView.swift
+//  CourseList.swift
 //  DesignCodeRecord
 //
-//  Created by 施伟 on 2020/10/13.
+//  Created by 施伟 on 2020/10/15.
 //
 
 import SwiftUI
 
-struct CourseView: View {
+struct CourseList: View {
     @ViewBuilder
     var body: some View {
         #if os(iOS)
@@ -27,8 +27,8 @@ struct CourseView: View {
     }
 }
 
-struct CourseView_Previews: PreviewProvider {
+struct CourseList_Previews: PreviewProvider {
     static var previews: some View {
-        CourseView()
+        CourseList()
     }
 }

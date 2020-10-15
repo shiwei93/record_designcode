@@ -27,14 +27,15 @@ struct Sidebar: View {
                     }
                 }
             #endif
-            CourseView()
+
+            CoursesView()
         }
     }
 
     var content: some View {
         List {
             NavigationLink(
-                destination: CourseView()
+                destination: CoursesView()
             ) {
                 Label("Courses", systemImage: "book.closed")
             }
